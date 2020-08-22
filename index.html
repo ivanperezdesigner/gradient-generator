@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <title>Gradient Generator</title>
+</head>
+
+<body id="bg">
+    <div class="h-screen flex justify-center items-center">
+        <div class="flex flex-col w-1/6 bg-white bg-opacity-25 rounded-lg shadow-2xl">
+            <div class="text-xl font-semibold text-white text-center px-4 py-2 m-2">Gradient Generator</div>
+            <div class="flex justify-center">
+                <input class="appearance-none" id="color1" type="color" value="#B5A8EA">
+                <input class="appearance-none ml-5" id="color2" type="color" value="#e66465">
+            </div>
+            <div id="hex" class="text-xs text-white text-center px-4 py-2 m-2"></div>
+            <button id="random" class="bg-transparent hover:bg-white text-white font-semibold hover:bg-opacity-25 text-white py-2 px-4 hover:border-transparent rounded">
+                Random
+            </button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
